@@ -9,6 +9,7 @@ PAGE-VAR (Policy Analysis of Greenhouse Effect - Variability) is a cost-benefit 
 PAGE-ICE (Policy Analysis of Greenhouse Effect - Ice, Climate,
 Economics).
 It expands on PAGE-ICE by introducing interannual temperature variability.
+For the empirical tempearture analysis that forms the basis for the temperature variability parameters, see [this repository](https://github.com/jkikstra/climvar).
 
 The PAGE-ICE model is introduced
 in
