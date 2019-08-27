@@ -1,14 +1,14 @@
-# PAGE-ICE - Open-Source Repository for the PAGE-ICE Integrated Assessment Model
+# PAGE-VAR - Open-Source Repository for the PAGE-VAR Integrated Assessment Model
 
 [![](https://img.shields.io/badge/docs-stable-blue.svg)](http://anthofflab.berkeley.edu/mimi-page-2020.jl/stable/)
 [![](https://img.shields.io/badge/docs-latest-blue.svg)](http://anthofflab.berkeley.edu/mimi-page-2020.jl/latest/)
-[![Build Status](https://travis-ci.org/anthofflab/mimi-page-2020.jl.svg?branch=master)](https://travis-ci.org/anthofflab/mimi-page-2020.jl)
+[![Build Status](https://travis-ci.org/anthofflab/mimi-page-2020.jl.svg?branch=annualPAGE)](https://travis-ci.org/anthofflab/mimi-page-2020.jl)
 [![codecov](https://codecov.io/gh/anthofflab/mimi-page-2020.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/anthofflab/mimi-page-2020.jl)
 
+PAGE-VAR (Policy Analysis of Greenhouse Effect - Variability) is a cost-benefit Integrated Assessment Model based on 
 PAGE-ICE (Policy Analysis of Greenhouse Effect - Ice, Climate,
-Economics) is a cost-benefit Integrated Assessment Model.  
-This repository contains two versions of the PAGE-ICE, implemented in
-Excel using @RISK and in Julia using Mimi.
+Economics).
+It expands on PAGE-ICE by introducing interannual temperature variability.
 
 The PAGE-ICE model is introduced
 in
@@ -31,7 +31,7 @@ the
 which features a Cockpit for setting up the model and a Results tab
 for the main result.
 
-The model has also been ported to the [Julia](https://julialang.org)
+The model has been ported to the [Julia](https://julialang.org)
 programming language, using
 the [Mimi framework](https://www.mimiframework.org/).  The Mimi
 version of PAGE-ICE is based on Mimi-PAGE-2009
@@ -54,6 +54,8 @@ so that you can use some of the tools in there:
 ```julia
 pkg> add Mimi
 ```
+
+Next to the Mimi package, several other julia packages should be added to your environment for running PAGE-VAR, namely `Distributions`, `DataFrames`, `CSV`, and `Random`. 
 
 ## Running the Mimi Model
 The model uses the Mimi framework and it is highly recommended to read the Mimi documentation first to understand the code structure. For starter code on running the model just once, see the code in the file `examples/main.jl`.
