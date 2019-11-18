@@ -93,8 +93,8 @@ end
     # Unadjusted temperature calculations
     fslope_CO2forcingslope = Parameter(unit="W/m2", default=5.5)
     pt_g_preliminarygmst = Variable(index=[time], unit="degreeC")
-
     pt_g_preliminarygmst_ann = Variable(index=[year], unit="degreeC") # NEW - for annual version
+
     # Surface albedo parameters
     alb_t_switch = Parameter(default=10.0)
     alb_saf_quadr_mean_t2_coeff = Parameter(default=-0.001955963673212411)
